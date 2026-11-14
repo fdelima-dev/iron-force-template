@@ -1,0 +1,59 @@
+@use 'variables';
+
+.planos{
+    max-width: 1440px;
+    width: 100%;
+    margin: 50px auto;
+    
+    h2.titlePlan{
+        font-size: 45px;
+    }
+    p{
+        margin-bottom: 40px;
+    }
+    &__container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: 768px){
+            display: flex;
+            flex-direction: column;
+        }
+        &__card{
+            border: 2px solid variables.$corLinkHover;
+            width: 400px;
+            text-align: center;
+            padding: 20px;
+            line-height: 1.8;
+            margin: 20px 40px;
+            border-radius: 12px;
+            transition: all .5s ease;
+
+            @media (max-width: 768px){
+                width: 200px;
+            }
+            h2{
+                font-size: 35px;
+            }
+            h3{
+                font-size: 27px;
+            }
+            button{
+                padding: 10px;
+                border: none;
+                width: 150px;
+                background-color: variables.$corTema;
+                cursor: pointer;
+                &:hover{
+                    background-color: variables.$corLinkHover;
+                }
+            }
+            &:hover{
+                border: 2px solid variables.$corTema;
+                transform: scale(103%);
+                box-shadow: 1px 3px 10px variables.$corTema;
+            }
+        }
+    }
+}

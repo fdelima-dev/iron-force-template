@@ -1,0 +1,39 @@
+@use 'variables';
+@use 'header';
+@use 'hero';
+@use 'data';
+@use 'extra';
+@use 'planos';
+@use 'depoimentos';
+@use 'accordion';
+@use 'contact';
+@use 'footer';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: variables.$fonteBrand;
+    src: url('../../assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: variables.$fontePrincipal;
+    src: url('../../assets/fonts/Inter/inter.regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: variables.$fonteHero;
+    src: url('../../assets/fonts/Inter/Inter-Bold.ttf');
+}
+body{
+    font-family: variables.$fontePrincipal;
+    background-color: variables.$corFundo;
+    color: variables.$corLinkHover;
+}
+.corTema{
+    color: variables.$corTema;
+}
+.lower{
+    text-transform: lowercase;
+}

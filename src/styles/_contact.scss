@@ -1,0 +1,35 @@
+@use 'variables';
+
+.contact{
+    max-width: 1440px;
+    width: 100%;
+    margin: 50px auto;
+    h2{
+        font-size: 45px;
+        margin: 20px 0;
+    }
+    &__container{
+        form{
+            display: flex;
+            flex-direction: column;
+
+            input{
+                margin: 20px 0;
+                padding: 10px;
+            }
+
+            textarea{
+                height: 250px;
+                resize: none;
+                margin-bottom: 20px;
+            }
+            button{
+                width: 150px;
+                padding: 10px;
+                background-color: variables.$corTema;
+                border: none;
+            }
+        }
+
+    }
+}

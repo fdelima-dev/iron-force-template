@@ -1,0 +1,26 @@
+@use 'variables';
+
+footer{
+    padding: 50px;
+    width: 100%;
+    background-color: variables.$corTema;
+    color: variables.$corFundo;
+    margin-top: 50px;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__divTwo{
+            &__list{
+            list-style: none;
+                &__item{
+                display: inline-block;
+                padding: 20px;
+                img{
+                    width: 60px;
+                }
+            }
+        }
+        }
+    }
+}

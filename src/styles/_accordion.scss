@@ -1,0 +1,28 @@
+@use 'variables';
+
+.accordion{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    .pergunta{
+        background-color: variables.$corCard;
+        padding: 40px;
+        border: none;
+        margin: 20px 0;
+        color: variables.$corLinkHover;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+    .resposta{
+        padding: 0 20px 20px;
+        border-bottom: 2px solid variables.$corLinkHover;
+        display: none;
+        &.active{
+            display: block;
+        }
+    }
+
+}

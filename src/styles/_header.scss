@@ -1,0 +1,45 @@
+@use 'variables';
+
+header{
+    max-width: 1440px;
+    width: 100%;
+    margin: 20px auto;
+
+   
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: 768px){
+            display: block;
+            text-align: center;           
+        }
+        &__brand{
+            img{
+                width: 150px;
+            }
+        }
+        &__menu{
+            &__list{
+                list-style: none;
+                &__item{
+                    float: left;
+                    @media (max-width: 768px){
+                        float: none;
+                        text-align: center;
+                    }
+                    a{
+                        color: variables.$corTema;
+                        text-decoration: none;
+                        padding: 14px 16px;
+                        display: block;
+                        &:hover{
+                            color: variables.$corLinkHover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

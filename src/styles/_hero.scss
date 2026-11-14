@@ -1,0 +1,72 @@
+@use 'variables';
+
+.hero{
+    background-image: url('../../build/images/hero.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 600px;
+
+    @media (max-width: 768px){
+        height: 400px;
+    }
+    &__container{
+        &__leftSide{
+            padding-top: 100px;
+            padding-left: 100px;
+            text-transform: uppercase;
+
+            @media (max-width: 768px){
+                padding: 0;
+            }
+            p{
+                color: variables.$corLinkHover;
+            }
+            h2{
+                font-family: variables.$fonteHero;
+                color: variables.$corLinkHover;
+                font-size: 104px;
+
+                @media (max-width: 768px){
+                    font-size: 30px;
+                }
+            }
+            button.btn1{
+                margin-top: 20px;
+                margin-right: 20px;
+                background-color: variables.$corTema;
+                border: none;
+                display: inline-flex;
+                padding: 4px 12px;
+                border-radius: 8px;
+                align-items: center;
+                cursor: pointer;
+                &:hover{
+                    background-color: variables.$corLinkHover;
+                }
+                img{
+                    width: 42px;
+                    padding-right: 8px;
+                }
+            }
+
+            button.btn2{
+                margin-top: 20px;
+                background-color: rgba(255,255,255.1);
+                border: none;
+                display: inline-flex;
+                padding: 4px 12px;
+                border-radius: 8px;
+                align-items: center;
+                cursor: pointer;
+                &:hover{
+                    background-color: variables.$corLinkHover;
+                }
+                img{
+                    width: 42px;
+                    padding-right: 8px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1 @@
+const pergunta=document.querySelectorAll(".pergunta");pergunta.forEach(function(e){e.addEventListener("click",function(){e.nextElementSibling.classList.toggle("active")})});
